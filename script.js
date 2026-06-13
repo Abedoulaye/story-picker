@@ -30,7 +30,8 @@ const storyObj = {
       "A family moves into a farmhouse with a locked basement door. They find old journals warning them never to open it. One stormy night, they hear scratching — not from inside the basement, but from the other side of the door they're standing behind."
     ],
     borderColor: "#ee4b2b",
-    bgColor: "#1a0a0a"
+    bgColor: "#1a0a0a",
+    textColor: "#f5e6e6"
   },
   funny: {
     stories: [
@@ -41,7 +42,8 @@ const storyObj = {
       "Kevin decided to cut his own hair to save money before a job interview. Halfway through, his clippers died. He had to attend the interview looking like a half-shaved alpaca. He got the job — the interviewer needed a good laugh."
     ],
     borderColor: "#f1be32",
-    bgColor: "#1a1a0a"
+    bgColor: "#1a1a0a",
+    textColor: "#f5f0d0"
   },
   adventure: {
     stories: [
@@ -52,7 +54,8 @@ const storyObj = {
       "While hiking in the Scottish Highlands, Finn discovered a cave behind a waterfall. Inside, carvings on the wall told the story of a lost Viking settlement — and a treasure buried not in gold, but in knowledge that could change history."
     ],
     borderColor: "#acd157",
-    bgColor: "#0a1a0a"
+    bgColor: "#0a1a0a",
+    textColor: "#d4f0d4"
   },
   mystery: {
     stories: [
@@ -63,7 +66,8 @@ const storyObj = {
       "A train arrives at a station with no passengers, no crew, and no record of ever having departed. In one of the compartments, a single suitcase sits on a seat. Inside: a passport with the finder's photo and a note reading 'You're on the right track. Don't stop.'"
     ],
     borderColor: "#6a5acd",
-    bgColor: "#0a0a1a"
+    bgColor: "#0a0a1a",
+    textColor: "#d4d4f5"
   },
   sciFi: {
     stories: [
@@ -74,7 +78,8 @@ const storyObj = {
       "A colony on Kepler-442b loses all communication with Earth. When a rescue ship finally arrives, they find the colony thriving — but every colonist insists they've only been there for three months. It's been seventeen years."
     ],
     borderColor: "#00ced1",
-    bgColor: "#0a1a1a"
+    bgColor: "#0a1a1a",
+    textColor: "#d4f5f5"
   }
 };
 
@@ -83,6 +88,7 @@ function displayStory(genre){
         resultParagraph.textContent = storyObj[genre].stories[Math.floor(Math.random() * 5)]
         storyContainer.style.borderColor = storyObj[genre].borderColor
         background.style.backgroundColor = storyObj[genre].bgColor
+        resultParagraph.style.color = storyObj[genre].textColor;
     }
 }
 
