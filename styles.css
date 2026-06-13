@@ -7,6 +7,7 @@ body{
     background-color: midnightblue;
     color: whitesmoke;
     text-align: center;
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 h1{
@@ -21,14 +22,29 @@ h1{
     cursor: pointer;
 }
 
+.theme{
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: royalblue;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-top: 0;
+    transition: background-color 0.3s ease;
+}
+
 .btn:hover{
     background-color:midnightblue;
+}
+
+.theme:hover{
+    background-color: midnightblue;
 }
 
 .story-container{
     margin: auto;
     padding: 10px;
     border: 14px double #fecc4c;
+    transition: border-color 0.4s ease;
 }
 
 .btn-container{
@@ -37,4 +53,8 @@ h1{
     justify-content: center;
     align-items: center;
     padding: 20px
+}
+
+.btn, .theme {
+    transition: background-color 0.3s ease, transform 0.2s ease; 
 }

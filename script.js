@@ -9,6 +9,17 @@ const sciFiBtn = document.querySelector(".sci-fi-btn")
 
 let resultParagraph = document.getElementById("result");
 
+let theme = document.querySelector(".theme")
+
+let bgColor = true;
+function changeTheme(){
+    background.style.backgroundColor = bgColor ? "#F2A541": "midnightblue";
+    background.style.color = bgColor ? "black": "whitesmoke"
+    bgColor = !bgColor
+}
+theme.addEventListener("click", ()=> changeTheme())
+
+
 const storyObj = {
   scary: {
     stories: [
@@ -71,7 +82,7 @@ function displayStory(genre){
     if (storyObj.hasOwnProperty(genre)){
         resultParagraph.textContent = storyObj[genre].stories[Math.floor(Math.random() * 5)]
         storyContainer.style.borderColor = storyObj[genre].borderColor
-        background = storyObj[genre].bgColor
+        background.style.backgroundColor = storyObj[genre].bgColor
     }
 }
 
@@ -80,3 +91,4 @@ funnyStoryBtn.addEventListener("click", () => displayStory("funny"))
 adventureStoryBtn.addEventListener("click", () => displayStory("adventure"))
 mysteriousStoryBtn.addEventListener("click", () => displayStory("mystery"))
 sciFiBtn.addEventListener("click", () => displayStory("sciFi"))
+
