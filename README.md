@@ -4,7 +4,7 @@ A random story generator built with vanilla JavaScript. Pick a genre — scary, 
 
 ## Live Demo
 
-[Add your GitHub Pages link here once deployed]
+[https://abedoulaye.github.io/story-picker/]
 
 ## Features
 
