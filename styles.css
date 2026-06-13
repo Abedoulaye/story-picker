@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color: midnightblue;
+    color: whitesmoke;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 45px;
+    margin-top: 25px;
+}
+
+.btn{
+    padding: 12px 24px;
+    border-radius: 6px;
+    background-color: royalblue;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color:midnightblue;
+}
+
+.story-container{
+    margin: auto;
+    padding: 10px;
+    border: 14px double #fecc4c;
+}
+
+.btn-container{
+    display:flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px
+}
